@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Alegreya Sans', sans-serif;
+    background-color: white;
+    margin: 0;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Ubuntu Condensed';
+    text-transform: uppercase;
+}
+
+
+/* Header styles */
+header{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 0;
+    color:black;
+    background-color: ivory;
+}
+
+header .head-container section{
+    float: left;
+    width: 40%;
+    padding: 0 80px;
+}
+
+header .head-container section h1{
+    font-size: 100px;
+}
+
+header .head-container section h1, header .head-container section h3{
+    text-align: right;
+}
+
+header .head-container section img,header .head-container section h3{
+    position: relative;
+    float: right;
+    display: inline;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.head-container img{
+    animation: fade-in 1s ease-in;
+}
+
+
+
+header .head-container aside img{
+    position: relative;
+    float: right;
+    display: block;
+    width: 60%;
+    height: auto;
+    animation: transform-img 1s ease-in;
+}
+
+header::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+header h1{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 50px;
+    animation: intro 1s ease-in;
+}
+
+header h3{
+    animation: intro-sub 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) ;         
+}
+
+
+
+
+/* Navigation styles */
+
+nav{
+    clear:both;
+    position: sticky;
+    top: 0px;
+    background-color: ivory;
+    overflow: hidden;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+
+nav ul{
+    width: 80%;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;   
+}
+
+nav a:link{
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    transition: color 0.33s cubic-bezier(0.2, 0.8, 0.5, 1);  
+}
+
+nav a svg{
+    width: 24px;
+    height: 24px;
+    color: black;
+    display: inline;
+    transition: color 0.33s cubic-bezier(0.2, 0.8, 0.5, 1);
+}
+
+.transition-nav{
+   text-decoration: underline;
+}
+
+.underline::after{
+    content:".";
+    margin: 0 auto;
+    display: block;
+    font-size: 1px;
+    background-color: black;
+    width: 0;
+    transition: all 0.33s cubic-bezier(0.2, 0.8, 0.5, 1);
+}
+
+nav a:visited{
+    color:black;
+}
+
+nav a:hover, nav a:hover svg{
+    color:rgb(177, 177, 177);
+}
+
+nav ul li .underline:hover::after{
+    width: 100%;
+    background-color: rgb(177, 177, 177);
+}
+
+nav a:focus{
+    text-decoration: inherit;
+}
+
+
+/* Pages Toggle with JS */
+
+.home, .cv, .skills, .projects-container, .certifications-container{
+    display: none;
+}
+
+.show {
+     display: block;
+}
+
+.active{
+    fill: gray;
+    color: grey;
+}
+
+/*  Row section and aside styles */
+
+.home .row:nth-child(even){
+    background-color: rgb(241, 241, 241);
+}
+
+.home .row{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.home .row section{
+    float: left;
+    padding: 10%;
+    width: 65%;
+}
+
+.home .row:nth-child(1) section{
+    padding: 50px;
+    width: 100%;
+}
+
+.home .row aside{
+    float: left;
+    width: 25%;
+    padding-top: 10%;
+    padding-right: 10%;
+}
+
+.home .row aside a{
+    text-decoration: none;
+}
+
+.home .row aside a svg{
+    width: 25px;
+    height: 25px;
+    transition: all 0.33s ease-in-out;
+}
+
+.home .row aside a:hover svg{
+    fill: grey;
+}
+
+.home .row img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.home article{
+    padding: 0;
+    margin-top: 20px;
+}
+
+.home .row::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+
+/* Footer Styles */
+
+footer{
+    padding: 20px;
+    margin-top: 0;
+    min-height: 50vh;
+    background-color: black;
+    color: ivory;
+}
+
+footer section{
+    margin: 0 auto;
+    width: 80%;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer ul li a svg{
+    width: 25px;
+    height: 25px;
+    fill: white;
+    transition: all 0.3s ease-in-out;
+}
+
+footer ul li a:link{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover svg{
+    fill:lightgrey;
+}
+
+
+/* Intro Animations for Header */
+
+@keyframes intro {
+    from{
+        top: 50px;
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+        top: 0px;
+    }
+}
+
+@keyframes intro-sub{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+@keyframes transform-img{
+    from{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from{
+        opacity:0;
+    }to{
+        opacity:100%;
+    }
+}

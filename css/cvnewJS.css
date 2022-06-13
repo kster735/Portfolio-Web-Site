@@ -1,0 +1,29 @@
+.cv .profile{
+    float: right;
+    padding: 20px;
+}
+
+
+.cv .row{
+    display: block;
+    position: relative;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.cv .row section{
+    float: left;
+    width: 65%;
+}
+
+.cv .row aside{
+    float: right;
+    width: 25%;
+}
+
+.cv .row::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+

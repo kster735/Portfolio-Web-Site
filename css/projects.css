@@ -1,0 +1,13 @@
+.projects-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.projects-container iframe, .projects-container img,.projects-container a{
+    width: 95%;
+}
+
+.projects-container h1, .projects-container h2, .projects-container h3{
+    display: block;
+    float: none;
+}

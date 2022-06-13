@@ -1,0 +1,84 @@
+.home .row section article .carousel {
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin: 10px auto 60px auto;
+    max-width: 840px;
+}
+
+.home .row section article .carousel__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home .row section article .carousel__track-container{
+    position: relative;
+    height: 100%;
+    margin: 0 auto; 
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.home .row section article .carousel__track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 333ms ease-in-out;
+}
+
+.home .row section article .carousel__slide{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    width: 100%;
+}
+
+.home .row section article .carousel__button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.home .row section article .carousel__button--left{
+    left: -50px;
+}
+
+.home .row section article .carousel__button--right{
+    right: -50px;
+}
+
+.home .row section article .carousel__button img{
+    width: 40px;
+}
+
+.home .row section article .carousel__nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 20px ;
+}
+
+.home .row section article .carousel__indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 20px;
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.home .row section article .carousel__indicator.current-slide{
+    background-color: rgba(0,0,0,75);
+}
+
+.home .row section article .is-hidden{
+    display: none;
+}
