@@ -3,7 +3,6 @@
     padding: 20px;
 }
 
-
 .cv .row{
     display: block;
     position: relative;
@@ -25,5 +24,28 @@
     content:"";
     display: block;
     clear: both;
+}
+
+.cv button{
+    font-size: large;
+    padding: 10px;
+    background: black;
+    color:ivory;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 333ms ease-in-out;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.4);
+    border:0;
+}
+
+.cv button:hover{
+    border: 1px black solid;
+    background:ivory;
+    color: black;
+    box-shadow:0;
+}
+
+.cv button:active{
+    box-shadow:0px 0px 0px 0px white;
 }
 

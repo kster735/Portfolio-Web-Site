@@ -186,7 +186,7 @@ nav a:focus{
 .home .row section{
     float: left;
     padding: 10%;
-    width: 65%;
+    width: 70%;
 }
 
 .home .row:nth-child(1) section{
@@ -196,10 +196,12 @@ nav a:focus{
 
 .home .row aside{
     float: left;
-    width: 25%;
+    width: 30%;
     padding-top: 10%;
     padding-right: 10%;
 }
+
+
 
 .home .row aside a{
     text-decoration: none;
@@ -225,11 +227,33 @@ nav a:focus{
     margin-top: 20px;
 }
 
+#hobbies img{
+    display: inline;
+    position: relative;
+    float: left;
+    width: 28%;
+    padding: 25px;
+}
+
+.home ol li{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.home ol li ol li{
+    font-weight: 100;
+    font-style: italic;
+    list-style-type: lower-alpha;
+}
+
+
 .home .row::after{
     content:"";
     display:table;
     clear:both;
 }
+
+
 
 
 /* Footer Styles */
@@ -264,6 +288,22 @@ footer ul li a:link{
 }
 
 footer ul li a:hover svg{
+    fill:lightgrey;
+}
+
+footer a svg{
+    width: 25px;
+    height: 25px;
+    fill: white;
+    transition: all 0.3s ease-in-out;
+}
+
+footer a:link svg{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover svg{
     fill:lightgrey;
 }
 

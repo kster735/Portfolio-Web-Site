@@ -1,6 +1,7 @@
 .projects-container{
     width: 80%;
     margin: 0 auto;
+    padding: 5%;
 }
 
 .projects-container iframe, .projects-container img,.projects-container a{
@@ -10,4 +11,8 @@
 .projects-container h1, .projects-container h2, .projects-container h3{
     display: block;
     float: none;
+}
+
+.projects-container img, .projects-container iframe{
+    border-radius: 20px;
 }
