@@ -1,0 +1,23 @@
+ .certifications-container .header {
+    text-align: center;
+    padding: 100px;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .certifications-container .row {
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .certifications-container .column img {
+    margin: 12px;
+  }
+  
+  /* Clear floats after the columns */
+  .certifications-container .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
