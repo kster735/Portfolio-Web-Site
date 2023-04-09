@@ -13,13 +13,15 @@
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/certifications.css">
+    <link rel="stylesheet" href="css/canvas.css">
     <script defer src="scripts/main.js"></script>
     <script defer src="scripts/carousel.js"></script>
+    <script defer src="scripts/canvas.js"></script>
     <title> My Page </title>
 </head>
 
 <body >
-
+    <!-- Header Tag -->
     <header id="#top">
         <div class="head-container">
             <section>
@@ -34,30 +36,31 @@
             </aside>
         </div>
     </header>
-
+    <!-- Navbar For Site  menu -->
     <nav>
         <ul>
             <li>
-                <a href="#" class="transition-nav">
+                <a href="#home" class="transition-nav">
                    <svg class="transition-nav" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 112.07" style="enable-background:new 0 0 122.88 112.07;" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:currentColor;}</style><g><path class="st0" d="M61.44,0L0,60.18l14.99,7.87L61.04,19.7l46.85,48.36l14.99-7.87L61.44,0L61.44,0z M18.26,69.63L18.26,69.63 L61.5,26.38l43.11,43.25h0v0v42.43H73.12V82.09H49.49v29.97H18.26V69.63L18.26,69.63L18.26,69.63z"/></g></svg>
                 </a>
             </li>
-            <li><a href="#" class="underline" class="transition-nav"> CV </a></li>
-            <li><a href="#" class="underline" class="transition-nav"> Skills </a></li>
-            <li><a href="#" class="underline" class="transition-nav"> Projects </a></li>
-            <li><a href="#" class="underline" class="transition-nav"> Certifications </a></li>
+            <li><a href="#cv" class="underline" class="transition-nav"> CV </a></li>
+            <li><a href="#skills" class="underline" class="transition-nav"> Skills </a></li>
+            <li><a href="#projects" class="underline" class="transition-nav"> Projects </a></li>
+            <li><a href="#certifications" class="underline" class="transition-nav"> Certifications </a></li>
         </ul>
     </nav>
     
 
     <!-- Home Page -->
+    <p id="home"></p>
     <div class="home show">
     <div class = "row" >
         <section>
             <h2>Projects</h2>
             <h5>Projects made until, June 3, 2022</h5>
             
-            <article>   
+            <article  >   
                 <div class="carousel">
                     <button class="carousel__button carousel__button--left is-hidden">
                        <img src="assets/images/left.svg" alt="button carousel left">
@@ -187,6 +190,7 @@
     </div>
 
     <!-- CV Page -->
+    <p id="cv"></p>
     <div class="cv">
     <div class="row">
         <section>
@@ -292,6 +296,7 @@
 
 
     <!-- Skills Page -->
+    <p id="skills"></p>
     <div class="skills">
     <div class="container"> 
         <h2>Skills:</h2>
@@ -389,12 +394,18 @@
                 <td></td>
             </tr>
         </table>
-    </div>
+        <canvas id="myCanvas" width="800" height="600" style="border:1px solid #000000;"></canvas>
+
     </div>
 
+    
+    </div>
+
+    
     <!-- Projects Page -->
-
+    <p id="projects"></p>
     <div class="projects-container">
+        
         <h1>Games</h1>
 
         <h3>Solar System (3D simulation)</h3>
@@ -415,7 +426,6 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
-
         <h3>TechnoCore</h3>
         <div>
             <a href="https://kster735gmailcom.itch.io/technocore?secret=NCJZj1tyHTPdSg19ouExkVjOukY">TechnoCore</a>
@@ -467,13 +477,13 @@
     </div>
 
     <!-- Certifications Page -->
+    <p id="certifications"></p>
     <div class="certifications-container">
     
         <div class="header">
             <h1>My Certifications</h1>
         </div>
     
-        <!-- Photo Grid -->
         <div class="row">
             <div class="column">
                 <img src="assets/images/certifications/Csharp.png" style="width:100%">
@@ -496,7 +506,11 @@
                 <img src="assets/images/certifications/PHP.jpg" style="width:100%">
             </div>
         </div>
-
+        <div class="row envision">
+            <a href="https://event.on24.com/eventRegistration/console/EventConsoleApollo.jsp?simulive=y&eventid=3756957&sessionid=1&username=&partnerref=&format=fhvideo1&mobile=&flashsupportedmobiledevice=&helpcenter=&key=145A3729269AE53C9BE594EA77558C70&newConsole=true&nxChe=true&newTabCon=true&consoleEarEventConsole=false&text_language_id=en&playerwidth=748&playerheight=526&eventuserid=543060655&contenttype=A&mediametricsessionid=469435662&mediametricid=5286108&usercd=543060655&mode=launch" target="_blank">
+                Microsoft Envision
+            </a>
+        </div> 
     </div>
     
     <footer>

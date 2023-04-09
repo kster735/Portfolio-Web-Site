@@ -76,7 +76,7 @@
 }
 
 .home .row section article .carousel__indicator.current-slide{
-    background-color: rgba(0,0,0,75);
+    background-color: rgba(0,188,0, 0.75);
 }
 
 .home .row section article .is-hidden{

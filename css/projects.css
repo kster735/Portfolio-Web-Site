@@ -5,7 +5,8 @@
 }
 
 .projects-container iframe, .projects-container img,.projects-container a{
-    width: 95%;
+    width: 460px;
+    height: 300px;
 }
 
 .projects-container h1, .projects-container h2, .projects-container h3{

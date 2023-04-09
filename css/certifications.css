@@ -3,7 +3,6 @@
     padding: 100px;
   }
   
-  /* Create two equal columns that floats next to each other */
   .certifications-container .row {
     display: flex;
     justify-content: flex-start;
@@ -15,9 +14,14 @@
     margin: 12px;
   }
   
-  /* Clear floats after the columns */
   .certifications-container .row:after {
     content: "";
     display: table;
     clear: both;
+  }
+
+  .envision{
+    color: black;
+    font-size: 2em;
+    padding: 2em;
   }
