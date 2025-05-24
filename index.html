@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/certifications.css">
     <link rel="stylesheet" href="css/canvas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="scripts/main.js"></script>
     <script defer src="scripts/carousel.js"></script>
     <script defer src="scripts/canvas.js"></script>
@@ -29,16 +30,24 @@
                 <img src="assets/images/Picture1.png"  class="profile" alt="Me" width = "80px">
                 <h3>Software Developer</h3>
             </section>
-            <!-- <aside>
+            <aside>
                 <div>
                     <img src="assets/images/codePerspective.png" alt="VS code window">
                 </div>
-            </aside> -->
+            </aside>
         </div>
     </header>
     <!-- Navbar For Site  menu -->
     <nav>
-        <ul>
+        <div class="check">
+            <input type="checkbox" name="toggle-menu" id="toggle-menu">
+            <label for="toggle-menu" class="checkbtn">
+                <div class="top-bar"></div>
+                <div class="middle-bar"></div>
+                <div class="bottom-bar"></div>
+            </label>
+        </div>
+        <ul class="menu">
             <li>
                 <a href="#home" class="transition-nav">
                    <svg class="transition-nav" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 112.07" style="enable-background:new 0 0 122.88 112.07;" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:currentColor;}</style><g><path class="st0" d="M61.44,0L0,60.18l14.99,7.87L61.04,19.7l46.85,48.36l14.99-7.87L61.44,0L61.44,0z M18.26,69.63L18.26,69.63 L61.5,26.38l43.11,43.25h0v0v42.43H73.12V82.09H49.49v29.97H18.26V69.63L18.26,69.63L18.26,69.63z"/></g></svg>
@@ -55,8 +64,8 @@
     <!-- Home Page -->
     <p id="home"></p>
     <div class="home show">
-    <div class = "row" >
-        <section>
+    <div class = "row ">
+        <section class="first-section">
             <h2>Projects</h2>
             <h5>Projects made until, June 3, 2022</h5>
 
@@ -119,7 +128,7 @@
             <h2>Certifications</h2>
             <h5></h5>
             <article>
-                <img src="assets/images/seminars.png" alt="An image">  </img>
+                <img src="assets/images/seminars.png" alt="An image"/>
                 Even though my first encounter with coding was at University with Pascal, Fortran and C++, as a programmer I consinder myself as a community learner. I seek to expand my skills with the aid of
                 people putting the effort to share their knowledge on CS on youtube, free seminars, learning apps and free ebooks.
                 I also aqcuired various Certifications from Institutions offering online seminars like <a href="https://mathesis.cup.gr/">Mathesis.cup</a>  and <a href="https://www.coursera.org/courseraplus?utm_source=gg&utm_medium=sem&utm_campaign=04-CourseraPlus-ESC&utm_content=B2C&campaignid=13433112712&adgroupid=121113573337&device=c&keyword=coursera&matchtype=b&network=g&devicemodel=&adpostion=&creativeid=526383220037&hide_mobile_promo&gclid=Cj0KCQjwwJuVBhCAARIsAOPwGAQjWHm4UWElLuAIDnrMGt-PTFLKoJ97B4q87Ody8VQba_Y71musvOsaAlWOEALw_wcB">Coursera</a>.
@@ -394,10 +403,11 @@
                 <td></td>
             </tr>
         </table>
-        <canvas id="myCanvas" width="800" height="600" style="border:1px solid #000000;"></canvas>
-
+        
     </div>
-
+    <!-- <div class="canvas-container">   
+       <canvas id="myCanvas" width="800" height="600" style="border:1px solid #000000;"></canvas>
+    </div>  -->
 
     </div>
 

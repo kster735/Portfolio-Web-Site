@@ -1,0 +1,24 @@
+Simple React App
+https://d1rn45.csb.app/
+
+
+
+Portfolio Site
+
+v1
+
+https://sterkatsog.sites.sch.gr/php/portfolio-stergios/
+
+v2
+
+http://iflexico.com/portfolio/
+
+
+Vanilla Javascript Digital clock
+
+https://ody6kp.csb.app/
+
+code at : https://codesandbox.io/s/digitalclock-ody6kp
+
+
+
