@@ -1,7 +1,7 @@
 .home .row section article .carousel {
     position: relative;
     height: 600px;
-    width: 80%;
+    width: 100%;
     margin: 10px auto 60px auto;
     max-width: 940px;
 }
@@ -15,7 +15,7 @@
 .home .row section article .carousel__track-container{
     position: relative;
     height: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
     overflow: hidden;
     border: 1px solid black;
     border-radius: 30px;
@@ -76,7 +76,7 @@
 }
 
 .home .row section article .carousel__indicator.current-slide{
-    background-color: rgba(0,0,0,75);
+    background-color: rgba(0,188,0, 0.75);
 }
 
 .home .row section article .is-hidden{

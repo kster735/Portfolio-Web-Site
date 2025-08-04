@@ -1,0 +1,9 @@
+
+canvas{
+    position: relative;
+    top: 10vh;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
